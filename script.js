@@ -36,7 +36,7 @@ let LEVEL = 1;
 let TURN = 0;
 function alertInfo(){
   TURN += 1;
-  let level = Math.pow(LEVEL, 0.3) + 1.8;
+  let level = Math.pow(LEVEL, 0.6) + 1.8;
 
   let probOfMagicCards = LEVEL*0.13;
   let probLevel1Summon = LEVEL*0.15;
@@ -56,7 +56,7 @@ function alertInfo(){
   let addOfDestroy1 = 0;
   let addOfNegateAttack = 0;
 
-  while(true){
+  while(TURN%2==1){
     probOfMagicCards = LEVEL*0.13;
     probLevel1Summon = LEVEL*0.15;
     probOfSecondSummon = LEVEL*0.07
@@ -131,6 +131,8 @@ function alertInfo(){
   }
 
   document.getElementById("directives").innerHTML = stringy;
+  if(TURN%2==0) document.getElementById("indicator").setAttribute( 'class', 'turn-show bg' );
+  else if(TURN%2==1) document.getElementById("indicator").setAttribute( 'class', 'turn-show br' );
 }
 
 function showValue(){

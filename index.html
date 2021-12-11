@@ -9,12 +9,16 @@
   <button onclick="addMonsterCard(2)">Add Level 2</button>
   <button onclick="addMonsterCard(3)">Add Level 3</button>
   <br> <br>
+
+  <div class="turn-show bb" id="indicator"></div>
+  <br>
+
   <table>
     <td>
       <input id = "inputLevel" type = "range" min = "1" max = "10" value = "1" step = "1" onchange="showValue()">
        <p id = "pForLevelValue"></p>
     </td>
-    <td><button onclick="alertInfo()" class="big">Get</button></td>
+    <td><button onclick="alertInfo()" class="big">Pass</button></td>
     <td id="directives"></td>
   </table>
   <br>
