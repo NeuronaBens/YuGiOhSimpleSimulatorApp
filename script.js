@@ -57,23 +57,23 @@ function alertInfo(){
   let addOfNegateAttack = 0;
 
   while(true){
-    let probOfMagicCards = LEVEL*0.13;
-    let probLevel1Summon = LEVEL*0.15;
-    let probOfSecondSummon = LEVEL*0.07
-    let probOfEvolution = LEVEL*0.07;
-    let probOfSuddenLevel2Summon = LEVEL*0.04;
-    let probOfSuddenLevel3Summon = LEVEL*0.02;
-    let probOfDestroy1 = LEVEL*0.04;
-    let probOfNegateAttack = LEVEL*0.05;
+    probOfMagicCards = LEVEL*0.13;
+    probLevel1Summon = LEVEL*0.15;
+    probOfSecondSummon = LEVEL*0.07
+    probOfEvolution = LEVEL*0.07;
+    probOfSuddenLevel2Summon = LEVEL*0.04;
+    probOfSuddenLevel3Summon = LEVEL*0.02;
+    probOfDestroy1 = LEVEL*0.04;
+    probOfNegateAttack = LEVEL*0.05;
 
-    let addMagicCard = 0;
-    let addLevel1Summon = 0;
-    let addSecondSummon = 0;
-    let addEvolution = 0;
-    let addSuddenLevel2Summon = 0;
-    let addSuddenLevel3Summon = 0;
-    let addOfDestroy1 = 0;
-    let addOfNegateAttack = 0;
+    addMagicCard = 0;
+    addLevel1Summon = 0;
+    addSecondSummon = 0;
+    addEvolution = 0;
+    addSuddenLevel2Summon = 0;
+    addSuddenLevel3Summon = 0;
+    addOfDestroy1 = 0;
+    addOfNegateAttack = 0;
 
     x = Math.random();
     if(x < probOfMagicCards){ addMagicCard = 1;}
