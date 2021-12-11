@@ -1,27 +1,27 @@
 <html>
 <head>
-<script src="script.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<br>
-<button onclick="addMonsterCard(1)">Add Level 1</button>
-<button onclick="addMonsterCard(2)">Add Level 2</button>
-<button onclick="addMonsterCard(3)">Add Level 3</button>
-<br> <br>
-<table>
-  <td>
-    <input id = "inputLevel" type = "range" min = "1" max = "10" value = "1" step = "1" onchange="showValue()">
-     <p id = "pForLevelValue"></p>
-  </td>
-  <td><button onclick="alertInfo()" class="big">Get</button></td>
-  <td id="directives"></td>
-</table>
-<br>
+  <br>
+  <button onclick="addMonsterCard(1)">Add Level 1</button>
+  <button onclick="addMonsterCard(2)">Add Level 2</button>
+  <button onclick="addMonsterCard(3)">Add Level 3</button>
+  <br> <br>
+  <table>
+    <td>
+      <input id = "inputLevel" type = "range" min = "1" max = "10" value = "1" step = "1" onchange="showValue()">
+       <p id = "pForLevelValue"></p>
+    </td>
+    <td><button onclick="alertInfo()" class="big">Get</button></td>
+    <td id="directives"></td>
+  </table>
+  <br>
 
-<table>
-  <tr id="back-row"></tr>
-  <tr id="front-row"></tr>
-</table>
+  <table>
+    <tr id="back-row"></tr>
+    <tr id="front-row"></tr>
+  </table>
 </body>
 </html>
